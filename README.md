@@ -21,6 +21,22 @@ This project involves the design and implementation of a simple yet functional *
 - **Simulation and Verification**: I used **Quartus II** to design and implement the Verilog version of the GPU. The functionality of the design was verified through waveform simulation, ensuring that all components operated as expected, including the latches, ALUs, FSM, and output display.
 - **Report Documentation**: The original course report, which is based on the VHDL implementation, is also included in the repository, providing additional context and insights into the initial design and objectives.
 
+## Files Included:
+
+The repository contains the following files:
+
+- **PDF of COE328 Report**: A detailed report from my course, which outlines the original project implemented in **VHDL**. This report includes comprehensive explanations of the design, truth tables, and waveform screenshots for verification.
+- **VHDL Project Files**: The original **VHDL** code for each component of the GPU, including the **ALUs**, **FSM**, **latches**, and **decoder**. Each file contains the code for the respective block.
+- **Verilog Project Files**: The final **Verilog** implementation of the GPU. These files include the Verilog code for each block, as well as the corresponding waveform simulations used for verification.
+  
+Both the VHDL and Verilog project files include:
+- Code for each block of the GPU.
+- Waveforms for each block to show their functionality.
+- Block diagrams for **GPU1**, **GPU2**, and **GPU3** to visualize the overall design.
+
+### **Important Notes**:
+- The **arithmetic instructions** for each **ALU1**, **ALU2**, and **ALU3**, which distinguish each GPU version (GPU1, GPU2, GPU3), are explained in the course report. The report provides a detailed breakdown of the instructions, truth tables, and screenshots of the waveform simulations to verify the **Verilog** version.
+
 ## Technologies Used:
 - **VHDL** (Original Version)
 - **Verilog** (Final Version)
