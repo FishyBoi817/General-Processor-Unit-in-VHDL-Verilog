@@ -17,13 +17,13 @@ module ALU1 (
             end
             16'b0000000000000010: begin
                 if (A < B) begin
-						result <= B - A;
-						neg <= 1;
-					 end
-					 else begin
-						result <= A - B;
-						neg <= 0;
-					 end
+			result <= B - A;
+			neg <= 1;
+		end
+		else begin
+			result <= A - B;
+			neg <= 0;
+		end
             end
             16'b0000000000000100: begin
                 result <= ~A; // NOT A
@@ -59,7 +59,7 @@ module ALU1 (
             end
         endcase
 		  
-		  RL <= result[3:0];
+	RL <= result[3:0];
         RH <= result[7:4];
     end
         
