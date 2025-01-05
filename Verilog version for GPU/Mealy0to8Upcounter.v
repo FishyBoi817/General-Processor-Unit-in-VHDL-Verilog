@@ -29,37 +29,37 @@ module Mealy0to8Upcounter(
 	always @(*) begin
 		case(pr_state) 
 			 s0: begin
-					if(data_in == 1) begin
-						next_state = s1;
-						student_id = 4'b0101;
-					end
-					else begin
-						next_state = s0;
-						student_id = 4'b1000;
-					end
-					currentstate = s0;
+				if(data_in == 1) begin
+					next_state = s1;
+					student_id = 4'b0101;
+				end
+				else begin
+					next_state = s0;
+					student_id = 4'b1000;
+				end
+				currentstate = s0;
 			 end
 			 s1: begin
-					if(data_in == 1) begin
-						next_state = s2;
-						student_id = 4'b0000;
-					end
-					else begin
-						next_state = s1;
-						student_id = 4'b0101;
-					end
-					currentstate = s1;
+				if(data_in == 1) begin
+					next_state = s2;
+					student_id = 4'b0000;
+				end
+				else begin
+					next_state = s1;
+					student_id = 4'b0101;
+				end
+				currentstate = s1;
 			 end
 			 s2: begin
-				  if(data_in == 1) begin
-						next_state = s3;
-						student_id = 4'b0001;
-				  end
-				  else begin
-						next_state = s2;
-						student_id = 4'b0000;
-				  end
-				  currentstate = s2;
+				if(data_in == 1) begin
+					next_state = s3;
+					student_id = 4'b0001;
+				end
+				else begin
+					next_state = s2;
+					student_id = 4'b0000;
+				end
+				currentstate = s2;
 			 end
 			 s3: begin
 				  if(data_in == 1) begin
@@ -116,7 +116,7 @@ module Mealy0to8Upcounter(
 						student_id = 4'b0001;
 				  end
 				  currentstate = s7;
-          end
+          		 end
 			 s8: begin
 				  if(data_in == 1) begin
 						next_state = s0;
@@ -127,8 +127,8 @@ module Mealy0to8Upcounter(
 						student_id = 4'b0011;
 				  end
 				  currentstate = s8;
-          end
-			 default: next_state = s0;
+          		end
+			default: next_state = s0;
 		endcase
  end
 	 
