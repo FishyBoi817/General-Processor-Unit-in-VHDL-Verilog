@@ -1,5 +1,7 @@
 # GPU with ALU and FSM - Verilog Implementation
 
+_*Last Updated - Jan 4, 2025*_
+
 This project involves the design and implementation of a simple yet functional **General Processor Unit (GPU)** that incorporates several key components for arithmetic operations, control logic, and display. Originally completed as a university course assignment in **VHDL**, I later converted the entire design to **Verilog** to gain proficiency in another hardware description language (HDL) and further my understanding of digital design. The final implementation was developed and tested using **Quartus II** with waveform simulation for verification.
 
 ## Project Features and Components:
